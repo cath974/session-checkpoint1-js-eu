@@ -28,11 +28,11 @@ Solve the following exercises, see the intructions in each file:
 
 > (**BONUS**) algo3.js
 
-### Part 2: Gallery with Bootstrap 
+### Part 2: Gallery with Bootstrap or not
 
 Create an `index.html` and an `index.css`. 
 
-Create a gallery of recipe photos with the Bootstrap grid system. 
+Create a gallery of recipe photos. If you want, you can do it with the Bootstrap grid system. 
 Get some photos here: https://pixabay.com/images/search/recipes/?orientation=horizontal 
 
 The grid should follow these layouts: 
