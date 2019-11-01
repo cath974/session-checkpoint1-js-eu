@@ -1,0 +1,110 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* html, * {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row {
+    height: 100%;
+}
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+
+/* @media only screen and (min-width: 480px) {
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.first-img {
+    width: 4cm;
+    height: 6cm;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+.second-img {
+    width: 4cm;
+    height: 6cm;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+}
+.third-img {
+    width: 4cm;
+    height: 6cm;
+    position: absolute;
+    top: 100px;
+    left: 30%;
+}
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .first-img {
+        width: 2cm;
+        height: 12cm;
+        position: absolute;
+        top: 100px;
+        left: 10%;
+    }
+    .second-img {
+        width: 2cm;
+        height: 12cm;
+        position: absolute;
+        top: 100px;
+        left: 20%;
+    }
+    .third-img {
+        width: 2cm;
+        height: 12cm;
+        position: absolute;
+        top: 100px;
+        left: 30%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .first-img {
+        width: 1cm;
+        height: 24cm;
+        position: absolute;
+        top: 100px;
+        left: 10%;
+    }
+    .second-img {
+        width: 1cm;
+        height: 6cm;
+        position: absolute;
+        top: 100px;
+        left: 20%;
+    }
+    .third-img {
+        width: 1cm;
+        height: 6cm;
+        position: absolute;
+        top: 100px;
+        left: 30%;
+    }
+} */
