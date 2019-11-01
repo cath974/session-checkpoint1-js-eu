@@ -23,3 +23,14 @@ The final array should look something like this:
     26-100
 ]
 */
+function LogSeats() {
+    let rows = 26,
+        seats = 100,
+        venue = [];
+    for (let r = 1; r <= rows; r++) {
+        for (let s = 1; s <= seats; s++) {
+            venue.push(r.toString(10) + ' - ' + s.toString(10));
+        }
+    }
+    return venue;
+}
