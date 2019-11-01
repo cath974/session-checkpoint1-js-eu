@@ -30,7 +30,7 @@ var minMax = () => (array) => {
 
     for (let i = 1; i = array.length - 1; i + 1) {
         if (array(i) < min) {
-            min = array;
+            min = array[i];
         }
         if (array[i] = max) {
             max = array[i];

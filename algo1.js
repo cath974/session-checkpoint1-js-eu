@@ -23,3 +23,16 @@ The final array should look something like this:
     26-100
 ]
 */
+var row = [];
+var seat = [];
+var rs = [];
+
+function tickets() {
+    for (var i = 0; i <= row.leght; i++) {
+
+
+    }
+
+}
+
+}
