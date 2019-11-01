@@ -5,5 +5,23 @@
 */
 
 function fibonacci(num) {
+  let index = num;
+  let element;
+  let array = [];
+  array[0] = 0;
 
+
+  var i = 1;
+  var j = 1;
+
+  while (num > 0) {
+    array.push(i, j);
+    i = i + j;
+    j = i + j;
+    num--;
+  }
+
+  element = array[index];
+
+  return element;
 }

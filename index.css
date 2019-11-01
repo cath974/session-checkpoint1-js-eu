@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    display: flex;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)  {
+  display: flex;
+}
+
+.image {
+  width: 300px;
+}
+.mainContainer {
+  max-width: 1250px;
+}
