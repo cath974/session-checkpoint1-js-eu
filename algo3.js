@@ -5,5 +5,20 @@
 */
 
 function fibonacci(num) {
+    let fibbo = [];
+    fibbo[0] = 0;
+    fibbo[1] = 1;
+    num = parseInt(num, 10);
+    if(isNaN(num)) {
+        throw new Error("Number it must be an integer.")
+    }
+    for(i = 2; i <=num; i+=1) {
+        fibbo[i] = fibbo[i-2] + fibbo[i-1];
+        if(fibbo.indexOf(num) !== -1) {
+            return fibbo.indexOf(num);
+        } else if(fibbo[i] > num) {
+            throw new Error('Not a Fibonacci number.Try again!')
+        }
+    }
 
 }
