@@ -1,0 +1,92 @@
+    .gallery-block {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    
+    .gallery-block .heading {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    .gallery-block .heading h2 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    
+    .gallery-block.compact-gallery .item {
+        overflow: hidden;
+        margin-bottom: 0;
+        background: greenyellow;
+        opacity: 1;
+    }
+    
+    .gallery-block.compact-gallery .item .images {
+        transition: 0.8s ease;
+    }
+    
+    .gallery-block.compact-gallery .item .info {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .gallery-block.compact-gallery .item .description {
+        display: grid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: sienna;
+        padding: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 1;
+        color: white;
+        ;
+        text-shadow: whitesmoke;
+        border-color: violet;
+        transition: 0, 2s ease;
+        text-align: center;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0, 39));
+    }
+    /* .gallery-block.compact-gallery .item .description1 {
+        display: grid;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: sienna;
+        padding: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 1;
+        color: white;
+        text-shadow: whitesmoke;
+        transition: 0, 8s ease;
+        text-align: center;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0, 39));
+    } */
+    
+    .gallery-block.compact-gallery .item .description .description-heading {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    @media(min-width:576px) {
+        .gallery-block.compact-gallery .item .description {
+            opacity: 0;
+        }
+        /* .gallery-block.compact-gallery .item .description1 {
+            opacity: 0;
+        } */
+        .gallery-block.gallery-block.compact-gallery .item .description:hover {
+            opacity: 1;
+        }
+        /* .gallery-block.compact-gallery .item .description1:hover {
+            opacity: 1;
+        } */
+    }
