@@ -4,6 +4,19 @@
  Ex: fibo(10) // return 55;
 */
 
-function fibonacci(num) {
 
+function fibonacci(num){
+    var a = 1, b = 0, temp;
+
+    while (num >= 0){
+        temp = a;
+        a = a + b;
+        b = temp;
+        num--;
+    }
+console.log(b);
+    return b;
 }
+
+//we calculate the next number by adding the
+// current number to the old number.
