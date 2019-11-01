@@ -1,0 +1,32 @@
+@mixin images ($size) {
+    .img-fluid{
+    margin: 1%;
+    width: $size;
+    }
+    .container-fluid{
+     text-align: center;
+    }
+};
+
+
+@media only screen and (max-width: 600px) {
+   @include images(340px)
+}
+
+@media only screen and (min-width: 600px) {
+    @include images(140px)
+}
+
+
+@media only screen and (min-width: 768px) {
+    @include images(165px)
+}
+
+
+@media only screen and (min-width: 992px) {
+    @include images(225px)
+}
+
+@media only screen and (min-width: 1200px) {
+    @include images(264px)
+}
