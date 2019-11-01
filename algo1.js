@@ -23,3 +23,15 @@ The final array should look something like this:
     26-100
 ]
 */
+
+const rowsAndSeats = (rows, seats) => {
+    let res = [];
+    for (let i = 1; i < rows + 1; i++) {
+        for (let j = 1; j < seats + 1; j++) {
+            res.push(i+'-'+j)
+        }
+    }
+    return res
+}
+
+console.log(rowsAndSeats(26, 100))
