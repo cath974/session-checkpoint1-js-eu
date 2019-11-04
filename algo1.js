@@ -23,3 +23,19 @@ The final array should look something like this:
     26-100
 ]
 */
+
+function seatsArray(rows, seats) {
+  let rowStr = "";
+  let seatStr = "";
+  let result = [];
+  for (let i = 1; i <= rows; i++) {
+    rowStr = `${i}-`;
+    for (let j = 1; j <= seats; j++) {
+      seatStr = rowStr + j;
+      result.push(seatStr);
+    }
+  }
+  return result;
+}
+
+console.log(seatsArray(26, 100));
