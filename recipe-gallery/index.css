@@ -3,5 +3,7 @@ div.container-fluid {
 }
 
 .display-1 {
+  font-family: "Pacifico", cursive;
   color: plum;
+  margin-bottom: 50px;
 }
