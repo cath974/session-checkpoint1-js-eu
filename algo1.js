@@ -23,3 +23,19 @@ The final array should look something like this:
     26-100
 ]
 */
+
+const createSeats = () => {
+    let seatsMap = [];
+    for (let i = 0; i < 26; i++) {
+        let rows = [];
+        for (let j = 0; j < 100; j++) {
+            const seat = `${i +1} - ${j+1}`
+            rows.push(seat)
+        }
+    seatsMap.push(rows);
+    }
+    return seatsMap;
+}
+
+const arrayOfSeats = createSeats();
+console.log(arrayOfSeats);
