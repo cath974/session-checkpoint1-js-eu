@@ -2,13 +2,13 @@
 We're building a ticket selling app for a cinema and we need to represent
 all the seats in the main room.
 
-In this room, the seats are organized as follows: 
-    - There are 26 rows of seats. Each row is numbered from "1" to "26" 
-    - Each row has 100 seats. Each seat is numbered from "1" to "100"
-    
+    In this room, the seats are organized as follows: 
+        - There are 26 rows of seats. Each row is numbered from "1" to "26" 
+        - Each row has 100 seats. Each seat is numbered from "1" to "100"
+        
 
-Create a function that returns an array of seats.
-Each item in the array should be in the form: row-seat.
+    Create a function that returns an array of seats.
+    Each item in the array should be in the form: row-seat.
 
 The final array should look something like this:
 [
@@ -23,3 +23,14 @@ The final array should look something like this:
     26-100
 ]
 */
+
+const seatArr = (row, seats) =>{
+    const newSeat = [];
+    for(let i = 0; i< row + 1; i++){
+      for(let j = 1; j < seats + 1; j++){
+        newSeat.push(i + "-" + j)
+      }
+    }
+  return newSeat
+}
+console.log(seatArr(26,100))
