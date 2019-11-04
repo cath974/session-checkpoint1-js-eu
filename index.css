@@ -1,0 +1,59 @@
+body {
+    margin : 0px ;
+    padding : 0px ;
+}
+#MainGrid {
+    display : table ;
+    box-sizing: border-box;
+
+    margin : auto ;
+
+}
+
+.foursixGrid {
+    display : inline-table ; 
+    width : 20% ;
+    max-height : 240px ;
+    /* background-color : blue ; */
+    padding : 10px ;
+    text-align: center;
+    vertical-align: center;
+    overflow : hidden ;
+
+}
+img {
+    display : inline-block ; 
+    width : 100% ;
+    height: auto;
+    margin: 0px ;
+    padding: 0px; 
+
+
+}
+div.foursixGrid:nth-of-type(4n) {
+    clear: right ;
+}
+
+@media screen and (max-width : 1200px) {
+
+    .foursixGrid {
+        
+        width : 40% ;
+    }
+    div.foursixGrid:nth-of-type(2n) {
+        clear: right ;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+
+    .foursixGrid {
+        
+        width : 80% ;
+    }
+    div.foursixGrid:nth-of-type(n) {
+        clear: right ;
+    }
+}
+
