@@ -1,9 +1,13 @@
-.recipe {
+.container {
+  display: grid;
+}
+
+.recipe img{
   width: 240px;
   height: 11rem;
-  padding: 10px;
+  display: inline-block;
 }
 
 h1 {
-  margin-top: 5rem;
+  margin-top: 50px;
 }
