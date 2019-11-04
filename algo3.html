@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <style>
+      .form-container {
+        padding-top: 20px;
+        margin: 0 auto;
+        max-width: 300px;
+      }
+    </style>
+    <title>Algo 3</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Algo 3</h1>
+      <h2>Minute hand angle</h2>
+      <form class="ui form">
+        <div class="field">
+          <label for="minute">Enter the minutes on the clock</label>
+          <input type="number" name="minute" id="minute" />
+        </div>
+        <button class="ui submit button" id="submit">Check angle</button>
+      </form>
+
+      <h3>Angle: <span id="result"></span></h3>
+    </div>
+
+    <script src="algo3.js"></script>
+  </body>
+</html>
