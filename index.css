@@ -1,0 +1,9 @@
+.container {
+display: flex;
+}
+
+.recipe {
+width: 240px;
+height: 11rem;
+padding: 2px;
+}
