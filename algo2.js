@@ -24,18 +24,43 @@ Fix the following function to help your new coworker!
 Note: try changing only the necessary code, don't rewrite the entire thing. 
 */
 
-var minMax = () => (array) => {
-    const min = 0;
-    const max = array[0];
+// >----Defitinion----<
 
-    for (let i = 1; i = array.length - 1; i + 1) {
-        if (array(i) < min) {
-            min = array;
+var minMax = (array) => { 
+    let min = 0; // arbitrary value to be reset with the scanned array.
+    let max = 0; // ibidem
+    let gotMin = false ; // true, when the array just has been scanned. 
+    let gotMax = false ; // ibidem
+
+    for (let i = 0; i < array.length; i++) {
+     
+        if (array[i] > max) {
+
+            max = array[i] ;
+            gotMax = true ;
+
+        } else if(!gotMax) {
+
+            max = array[i]; // remove the default arbitrary value with a temporary max from the array .
+            gotMax = true ; // the array is being scanned . 
+        } 
+            
+        if (array[i] < min) {
+            min = array[i];
+            gotMin = true ;
+
+        } else if (!gotMin){
+
+                min = array[i]; // remove the default arbitrary value with a temporary max from the array .
+                gotMin = true ; // the array is being scanned .
         }
-        if (array[i] = max) {
-            max = array[i];
-        }
-        return array;
+
+        
     }
-    array.push(min, max);
-}
+    const tipsArray = [min, max] ;
+    return tipsArray;
+} // >----o----<
+
+var examples  = [[4, 6, 35, -65, -9, 0, 67], [-30, 5, 43, 108, -5, -7, 89], [56, 7, 63, 9, 7, 12, 85], [-10, -6, -5, -2, -3, -1],] ;
+
+examples.forEach((array) => {console.log(minMax(array)); }) ;
