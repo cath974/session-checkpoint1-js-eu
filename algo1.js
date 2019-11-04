@@ -19,7 +19,35 @@ The final array should look something like this:
     .
     .
     26-98,
-    26-99,
+    26-99, 
     26-100
 ]
 */
+
+// ecriture avant ES6 :
+
+// >---- Definition ----<
+
+function seatNumbers (maxRow = 26, maxSeats = 100) {  
+    let itsRow = 1 ;
+    let itsSeat = 1 ;
+    const listSeats = [] ;
+
+    for (let i=0 ; i < maxRow ; i++) {
+        for (let j=0 ; j < maxSeats; j++) {
+
+            listSeats.push(itsRow +'-'+ itsSeat)
+
+            itsSeat++ ;
+        }
+        itsSeat = 1 ;
+        itsRow++ ;
+    }
+    itsRow = 1 ;
+    return listSeats ;
+}   
+// >---- o ----<
+
+let see = seatNumbers() ;   // <---- execution ---->
+
+console.log(see) ;
