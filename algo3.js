@@ -4,6 +4,6 @@
  Ex: fibo(10) // return 55;
 */
 
-function fibonacci(num) {
+function fibonacci(num) {   
 
 }

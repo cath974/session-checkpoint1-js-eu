@@ -1,0 +1,18 @@
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img{
+    width: 40vh;
+    height: 40vh;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .card img{
+        width: 30vh;
+        height: 30vh;
+    }
+}
