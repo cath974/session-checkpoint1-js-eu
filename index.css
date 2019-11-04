@@ -1,0 +1,39 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-picture {
+   width: 90%;
+   margin-top: 16px;
+   vertical-align: middle;
+}
+
+
+/*TABLET*/
+@media screen and (min-width:561px) and (max-width:961px) {
+
+      .gallery-picture {
+        width: 45%;
+        vertical-align: middle;
+     }
+}
+
+/*DESKTOP*/
+@media screen and (min-width:962px) {
+
+    .gallery-picture {
+        width: 23%;
+        vertical-align: middle;
+     }
+
+}
+
