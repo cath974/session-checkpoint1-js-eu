@@ -22,4 +22,18 @@ The final array should look something like this:
     26-99,
     26-100
 ]
+
+
 */
+
+const finalArray = (seats, rowSeats) => {
+    const newSeats = [];
+      for (let i=0; i<seats +1; i++){
+        for (let j=1; j<rowSeats +1; j++){
+          newSeats.push(i +'-'+ j);
+      }
+      }
+    return newSeats;
+  }
+  
+   console.log(finalArray(26,100));
