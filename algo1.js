@@ -23,3 +23,14 @@ The final array should look something like this:
     26-100
 ]
 */
+
+const lastArray = (seats, rowSeats)=>{
+    const cinema = [];
+      for (let i = 0; i < seats + 1; i++) {
+        for (let j = 1; j < rowSeats + 1; j++) {
+          cinema.push(i +'-'+ j);
+    }
+  }
+  return cinema;
+  }
+  console.log(lastArray(26,100))
