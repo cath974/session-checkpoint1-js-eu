@@ -1,0 +1,43 @@
+@media screen and (min-width : 1333px) {
+
+    img {
+        width: 24.7vw;
+        height: 40vh;
+    }
+
+    .allImages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 1332px) {
+
+    img {
+        width: 49vw;
+        height: 40vh;
+    }
+
+    .allImages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width : 799px) {
+
+    img {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .allImages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+}

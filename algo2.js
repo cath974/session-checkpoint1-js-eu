@@ -24,7 +24,11 @@ Fix the following function to help your new coworker!
 Note: try changing only the necessary code, don't rewrite the entire thing. 
 */
 
-const minMax = []
+const array = [4, 6, 35, -65, -9, 0, 67];
+const array2 = [-30, 5, 43, 108, -5, -7, 89];
+const array3 = [56, 7, 63, 9, 7, 12, 85];
+
+const minMax = [];
 
 min = Math.min(...array);
 max = Math.max(...array);
