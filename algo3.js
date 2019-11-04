@@ -6,5 +6,12 @@ If the user enters a number that is above 60, your program should fail, and log 
 */
 
 function minuteAngle(minute) {
-
+    if(minute > 0 && minute <= 60){
+        var res = minute * 6;
+        return res;
+    } else {
+        return "You need to insert a valid number"
+    }
 }
+
+console.log(minuteAngle(30));

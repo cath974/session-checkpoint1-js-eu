@@ -20,6 +20,18 @@ The final array should look something like this:
     .
     26-98,
     26-99,
-    26-100
+    26-100 
 ]
 */
+
+
+function rowSeat(rows, seats) {
+    var arr = [];
+    for (rows = 1; rows <= 26; rows++) {
+      for (seats = 1; seats <= 100; seats++) {
+        arr.push(rows + "-" + seats);
+      }
+    }
+    return arr;
+  }
+  console.log(rowSeat(26, 100));
