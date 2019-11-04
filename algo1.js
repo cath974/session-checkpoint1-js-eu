@@ -23,3 +23,14 @@ The final array should look something like this:
     26-100
 ]
 */
+
+const rows = [];
+  for (let i = 1; i <= 26; i++ ) {
+    rows[i] = i;
+
+  const seats = [];
+    for (let j = 1; j <= 100; j++ ) {
+      seats[j] = j;
+      console.log(rows[i] +"-"+ seats[j])
+  }
+}
