@@ -5,5 +5,13 @@
 */
 
 function fibonacci(num) {
+    // val fiboArray = [];
+    // fiboArray[0] = 0
+    // fiboArray[1] = 1
+    // for(let i=2; i<=num; i++){
 
+    // }
+
+    return (num < 2) ? num : fibonacci(num - 1) + fibonacci(num - 2);
 }
+console.log(fibonacci(10))
