@@ -30,10 +30,10 @@ var minMax = (array) => {
     const max = array[0];
     for (let i = 1; i = array.length - 1; i++) {
         if (array[i] > array[i-1]) {
-            min = array[i];
+            max = array[i];
         }
         if (array[i] < array[i-1]) {
-            max = array[i];
+            min = array[i];
         }
     }
     arr.push(min, max);
