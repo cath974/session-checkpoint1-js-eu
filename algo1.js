@@ -29,28 +29,31 @@ rowStart, rowEnd, seatsStart, seatsEnd
 */
 
 function returnNoSeats() {
-let rowStart = 1;
-let rowEnd = 26;
-let seatsStart = 1;
-let seatsEnd = 100;
-let rowArr = [];
-let seatsArr = [];
-let result = [];
-for(let i = rowStart; i <= rowEnd; i++) {
-rowArr.push(i);
-}
-for(let i = seatsStart; i<= seatsEnd; i++) {
-seatsArr.push(i);
-}
-for(let i = 0; i< rowArr.length; i++){
-    for(let j = 0; j < seatsArr.length; j++) {
-        let temp = rowArr[i].toString();
-        let temp3 = seatsArr[j].toString();
-        temp4 = `${temp}-${temp3}`;
-        result.push(temp4);
+    let rowStart = 1;
+    let rowEnd = 26;
+    let seatsStart = 1;
+    let seatsEnd = 100;
+    let rowArr = [];
+    let seatsArr = [];
+    let result = [];
+    
+    for(let i = rowStart; i <= rowEnd; i++) {
+        rowArr.push(i);
     }
-}
-return result;
+    
+    for(let i = seatsStart; i<= seatsEnd; i++) {
+        seatsArr.push(i);
+    }
+    
+    for(let i = 0; i< rowArr.length; i++){
+         for(let j = 0; j < seatsArr.length; j++) {
+             let temp = rowArr[i].toString();
+             let temp3 = seatsArr[j].toString();
+             temp4 = `${temp}-${temp3}`;
+             result.push(temp4);
+      }
+    }
+  return result;
 }
 
 returnNoSeats();
