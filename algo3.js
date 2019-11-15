@@ -17,7 +17,7 @@ function fibonacci(num) {
     for(i = 2; i <=num; i++) {
         fibbo[i] = fibbo[i-2] + fibbo[i-1];
         if(fibbo.indexOf(num) !== -1) {
-            res = fibbo[num];
+            response = fibbo[num];
         } else if(fibbo[i] > num) {
             throw new Error('Not a Fibonacci number.Try again!')
         }
