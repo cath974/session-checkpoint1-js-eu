@@ -1,4 +1,4 @@
-/* 
+/*
 The new guy in your team wrote this terrible code
 and now he's asking you why it doesn't work...
 
@@ -23,9 +23,42 @@ Fix the following function to help your new coworker!
 
 Note: try changing only the necessary code, don't rewrite the entire thing. 
 */
+ //     PRO SOLUTION!
+// var minMax = (array = []) => {
+//     const min = array.sort((a, b) => a - b)[0],
+//           max = array.sort((a, b) => a - b)[array.length - 1];
+//     return [min, max];
+// }
+//      Nub Co-Worker!
+// var minMax = () => (array) => {
+//     const min = 0;
+//     const max = array[0];
 
-var minMax = (array = []) => {
-    const min = array.sort((a, b) => a - b)[0],
-          max = array.sort((a, b) => a - b)[array.length - 1];
-    return [min, max];
+//     for (let i = 1; i = array.length - 1; i + 1) {
+//         if (array(i) < min) {
+//             min = array;
+//         }
+//         if (array[i] = max) {
+//             max = array[i];
+//         }
+//         return array;
+//     }
+//     array.push(min, max);
+// }
+//      Correcting Nub Co-Worker!
+
+var minMax = (array) => {
+    var min = array[0];
+    var max = array[array.length-1];
+
+    for (var i = 0; i < array.length - 1; i++) {
+        var e = array[i]
+        if (e < min) {
+            min = e;
+        }
+        if (e > max) {
+            max = e;
+        }
+    }
+    return [min,max];
 }

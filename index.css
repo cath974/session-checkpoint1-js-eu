@@ -1,17 +1,7 @@
 @media only screen and (max-width: 600px) {
   .img-fluid {
-    margin: 1%;
-    width: 340px;
-  }
-  .container-fluid {
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .img-fluid {
-    margin: 1%;
-    width: 140px;
+    margin: 5%;
+    width: 90%;
   }
   .container-fluid {
     text-align: center;
@@ -20,18 +10,8 @@
 
 @media only screen and (min-width: 768px) {
   .img-fluid {
-    margin: 1%;
-    width: 165px;
-  }
-  .container-fluid {
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .img-fluid {
-    margin: 1%;
-    width: 225px;
+    margin: 2%;
+    width: 44%;
   }
   .container-fluid {
     text-align: center;
@@ -40,8 +20,8 @@
 
 @media only screen and (min-width: 1200px) {
   .img-fluid {
-    margin: 1%;
-    width: 264px;
+    margin: 2%;
+    width: 20%;
   }
   .container-fluid {
     text-align: center;
