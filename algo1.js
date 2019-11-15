@@ -36,6 +36,7 @@ function returnNoSeats() {
     let rowArr = [];
     let seatsArr = [];
     let result = [];
+    let temp;
     
     for(let i = rowStart; i <= rowEnd; i++) {
         rowArr.push(i);
@@ -47,10 +48,10 @@ function returnNoSeats() {
     
     for(let i = 0; i< rowArr.length; i++){
          for(let j = 0; j < seatsArr.length; j++) {
-             let temp = rowArr[i].toString();
+             let temp2 = rowArr[i].toString();
              let temp3 = seatsArr[j].toString();
-             temp4 = `${temp}-${temp3}`;
-             result.push(temp4);
+             temp = `${temp}-${temp3}`;
+             result.push(temp);
       }
     }
   return result;
