@@ -8,17 +8,20 @@ function fibonacci(num) {
     let fibbo = [];
     fibbo[0] = 0;
     fibbo[1] = 1;
-    num = parseInt(num, 10);
+    let ressponse;
+    
     if(isNaN(num)) {
         throw new Error("Number it must be an integer.")
     }
-    for(i = 2; i <=num; i+=1) {
+ 
+    for(i = 2; i <=num; i++) {
         fibbo[i] = fibbo[i-2] + fibbo[i-1];
         if(fibbo.indexOf(num) !== -1) {
-            return fibbo.indexOf(num);
+            res = fibbo[num];
         } else if(fibbo[i] > num) {
             throw new Error('Not a Fibonacci number.Try again!')
         }
     }
+  return response;
 
 }
