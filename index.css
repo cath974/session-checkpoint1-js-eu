@@ -1,14 +1,20 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    display: flex;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px)  {
+.mainContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .image {
-  width: 300px;
+  width: 100%;
 }
-.mainContainer {
-  max-width: 1250px;
+
+@media(min-width: 600px) {
+  .image {
+    width: 50%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .image {
+    width: 25%;
+  }
 }

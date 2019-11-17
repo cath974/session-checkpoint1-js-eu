@@ -38,3 +38,4 @@ function seats(rows, seats) {
     }
     return arrayResult;
   }
+function 
