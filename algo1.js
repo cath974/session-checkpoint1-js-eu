@@ -26,16 +26,15 @@ The final array should look something like this:
 
 
 function seats(rows, seats) {
-    let arrayResult = [];
-  
-    for(let i=1; i<= rows; i++) {
-      for(let j=1;j<= seats; j++) {
-       
-        let index = 1;
-        arrayResult.push(i+'-'+j);
-        index++;
-      }
+  let arrayResult = [];
+
+  for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= seats; j++) {
+
+      let index = 1;
+      arrayResult.push(i + '-' + j);
+      index++;
     }
-    return arrayResult;
   }
-function 
+  return arrayResult;
+}
