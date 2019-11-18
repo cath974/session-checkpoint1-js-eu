@@ -30,8 +30,6 @@ function seats(rows, seats) {
 
   for (let i = 1; i <= rows; i++) {
     for (let j = 1; j <= seats; j++) {
-
-      let index = 1;
       arrayResult.push(i + '-' + j);
       index++;
     }
