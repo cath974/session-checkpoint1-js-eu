@@ -8,10 +8,10 @@ function fibonacci(num) {
     let fibbo = [];
     fibbo[0] = 0;
     fibbo[1] = 1;
-    let ressponse;
+    let response;
     
     if(isNaN(num)) {
-        throw new Error("Number it must be an integer.")
+        console.error("Number it must be an integer.")
     }
  
     for(i = 2; i <=num; i++) {
@@ -19,7 +19,7 @@ function fibonacci(num) {
         if(fibbo.indexOf(num) !== -1) {
             response = fibbo[num];
         } else if(fibbo[i] > num) {
-            throw new Error('Not a Fibonacci number.Try again!')
+            console.error('Not a Fibonacci number.Try again!')
         }
     }
   return response;
