@@ -6,17 +6,20 @@
 
 
 function fibonacci(num){
-    var a = 1, b = 0, temp;
-
-    while (num >= 0){
-        temp = a;
-        a = a + b;
-        b = temp;
-        num--;
+    var myArray = [];
+    myArray[0] = 0;
+    myArray[1] = 1;
+    if (num < 2){
+        return myArray[num];
+    } else {
+        for (let i = 2; i <= num; i++){
+            myArray[i] = myArray[i-1] + myArray[i-2];
+        }
+        return myArray[num];
     }
-console.log(b);
-    return b;
 }
+
+console.log(fibonacci(6));
 
 //we calculate the next number by adding the
 // current number to the old number.

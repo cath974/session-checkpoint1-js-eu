@@ -1,49 +1,60 @@
-/* CSS style for the body */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 0;
-    font-family: "Lora", serif;
-}
-/* Cover Image Styles */
-
-.cover {
-    background: no-repeat center/cover;
-    background-attachment: fixed;
+    font-family: Arial;
 }
 
-.heroText {
-    margin-left: 23%;
-    font-size: 35pt;
-    font-weight: bold;
 }
 
-.heroButton {
-    margin-left: 25%;
-    width: 160px;
-    padding: 10px 20px;
-    font-weight: bold;
+.header {
+    text-align: center;
+    padding: 32px;
 }
 
-.downArrow {
+.row {
     display: flex;
-    justify-content: center;
-    top: 25vh;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 8px;
+    width: 100%;
 }
 
-#down {
-    font-size: 2.5em;
-    font-weight: bolder;
-    color: black;
-    opacity: 0.9;
-    line-height: 0.5;
-    border-radius: 5px;
-    cursor: pointer;
-    /* padding: 1px #343a40;
-    padding-top: -10px; */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    width: 100%;
 }
 
-#down:hover {
-    color: #dc3545;
-    opacity: 0.8;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .column {
+        margin-top: 8px;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .row {
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .column {
+        margin-top: 8px;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .row {
+        margin-top: 0px;
+    }
+}
