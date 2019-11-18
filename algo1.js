@@ -23,3 +23,34 @@ The final array should look something like this:
     26-100
 ]
 */
+
+const rows = Array.from({ length: 26 }, (v, k) => k + 1);
+const seats = Array.from({ length: 100 }, (v, k) => k + 1);
+
+
+function getSeats(rows, seats) {
+    var myArray = [];
+    for (let i = 0; i < rows.length; i++) {
+        for (let j = 0; j < seats.length; j++) {
+            var mySeat = rows[i] + "-" + seats[j];
+            myArray.push(mySeat);
+        }
+    }
+    return myArray;
+
+}
+console.log(getSeats(rows, seats));
+
+
+// function getSeats(rows, seats) {
+//     var myArray = [];
+//     for (let i = 1; i <= rows; i++) {
+//         for (let j = 1; j <= seats; j++) {
+//             var mySeat = i + "-" + j;
+//             myArray.push(mySeat);
+//         }
+//     }
+//     return myArray;
+
+// }
+// console.log(getSeats(26, 100));
