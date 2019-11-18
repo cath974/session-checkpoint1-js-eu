@@ -50,7 +50,7 @@ function returnNoSeats() {
          for(let j = 0; j < seatsArr.length; j++) {
              let temp2 = rowArr[i].toString();
              let temp3 = seatsArr[j].toString();
-             temp = `${temp}-${temp3}`;
+             temp = `${temp2}-${temp3}`;
              result.push(temp);
       }
     }
