@@ -25,9 +25,9 @@ Note: try changing only the necessary code, don't rewrite the entire thing.
 */
 
 var minMax = (array) => {
-    const arr = [];
-    const min = array[0];
-    const max = array[0];
+    let arr = [];
+    let min = array[0];
+    let max = array[0];
     for (let i = 1; i = array.length - 1; i++) {
         if (array[i] > array[i-1]) {
             max = array[i];
