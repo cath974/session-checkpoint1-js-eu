@@ -51,7 +51,7 @@ var minMax = (array) => {
     var min = array[0];
     var max = array[array.length-1];
 
-    for (var i = 0; i < array.length - 1; i++) {
+    for (var i = 0; i < array.length ; i++) {
         var e = array[i]
         if (e < min) {
             min = e;
