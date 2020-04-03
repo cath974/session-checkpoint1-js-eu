@@ -1,0 +1,10 @@
+body{
+    box-sizing: border-box;
+}
+
+.im{
+    background-color: rgb(189, 129, 128);
+    margin: 5px; 
+}
+
+
