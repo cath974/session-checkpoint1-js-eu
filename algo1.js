@@ -23,3 +23,22 @@ The final array should look something like this:
     26-100
 ]
 */
+const result = [];
+
+const array = () => {
+    let indexResult = 0;
+        for (let i=1; i<=26;i++) {
+            for (let j=1;j<=100;j++) {
+                result[indexResult]=`${i}-${j}`
+                indexResult+=1
+            }
+        }
+        return result;
+        
+}
+
+const test = array()
+console.log (test)
+
+
+
